@@ -1,0 +1,11 @@
+C:\www\NanPoc\NanPoc\NanPoc.Web\bin\Debug\netcoreapp2.0\NanPoc.Web.deps.json
+C:\www\NanPoc\NanPoc\NanPoc.Web\bin\Debug\netcoreapp2.0\NanPoc.Web.runtimeconfig.json
+C:\www\NanPoc\NanPoc\NanPoc.Web\bin\Debug\netcoreapp2.0\NanPoc.Web.runtimeconfig.dev.json
+C:\www\NanPoc\NanPoc\NanPoc.Web\bin\Debug\netcoreapp2.0\NanPoc.Web.dll
+C:\www\NanPoc\NanPoc\NanPoc.Web\bin\Debug\netcoreapp2.0\NanPoc.Web.pdb
+C:\www\NanPoc\NanPoc\NanPoc.Web\obj\Debug\netcoreapp2.0\NanPoc.Web.csprojResolveAssemblyReference.cache
+C:\www\NanPoc\NanPoc\NanPoc.Web\obj\Debug\netcoreapp2.0\NanPoc.Web.csproj.CoreCompileInputs.cache
+C:\www\NanPoc\NanPoc\NanPoc.Web\obj\Debug\netcoreapp2.0\NanPoc.Web.AssemblyInfoInputs.cache
+C:\www\NanPoc\NanPoc\NanPoc.Web\obj\Debug\netcoreapp2.0\NanPoc.Web.AssemblyInfo.cs
+C:\www\NanPoc\NanPoc\NanPoc.Web\obj\Debug\netcoreapp2.0\NanPoc.Web.dll
+C:\www\NanPoc\NanPoc\NanPoc.Web\obj\Debug\netcoreapp2.0\NanPoc.Web.pdb
