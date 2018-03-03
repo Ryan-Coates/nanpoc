@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 namespace NanPoc.Web.Models
 {
     public class SearchModel
-    {
+    {        
+        public string SearchString { get; set; }
+        public string ItemType { get; set; }
     }
 }

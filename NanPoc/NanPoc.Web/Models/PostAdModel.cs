@@ -7,5 +7,8 @@ namespace NanPoc.Web.Models
 {
     public class PostAdModel
     {
+        public string Title { get; set; }
+        public string Description { get; set; }
+        public string Location { get; set; }
     }
 }

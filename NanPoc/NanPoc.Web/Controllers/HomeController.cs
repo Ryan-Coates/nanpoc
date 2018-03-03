@@ -15,6 +15,28 @@ namespace NanPoc.Web.Controllers
             return View();
         }
 
+        public IActionResult Search()
+        {
+            SearchModel model = new SearchModel();
+            return View(model);
+        }
+        [HttpPost]
+        public IActionResult Search(SearchModel model)
+        {
+            return View();
+        }
+
+        public IActionResult PostAd()
+        {
+            PostAdModel model = new PostAdModel();
+            return View(model);
+        }
+        [HttpPost]
+        public IActionResult PostAd(PostAdModel model)
+        {
+            return View();
+        }
+
         public IActionResult About()
         {
             ViewData["Message"] = "Your application description page.";
