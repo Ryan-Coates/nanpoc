@@ -1,4 +1,4 @@
-﻿@model SearchModel;
+﻿@model DisplayModel;
 @{
     ViewData["Title"] = "Search";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -9,10 +9,19 @@
 @using (Html.BeginForm("Search", "Home", FormMethod.Post))
 {
     <label>Search</label>
-    @Html.TextBoxFor(m => m.SearchString, new { @class = "form-control" })
+    @Html.TextBoxFor(m => m.Search.SearchString, new { @class = "form-control" })
     <label>Type</label>
-    @Html.TextBoxFor(m => m.ItemType, new { @class = "form-control" })
+    @Html.TextBoxFor(m => m.Search.ItemType, new { @class = "form-control" })
     <input type="submit" value="Search" />
 
+}
+
+@foreach(var post in Model.Posts )
+{
+    <div>
+        <h3>@post.Title</h3>
+        <p>@post.Description</p>
+        <img src="@post.ImageURL"/>
+    </div>
 }
 

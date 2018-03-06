@@ -12,6 +12,7 @@ namespace NanPoc.Web.Controllers
 {
     public class HomeController : Controller
     {
+        private static MockDataBase mockdb = new MockDataBase();
         public IActionResult Index()
         {
             return View();
@@ -19,13 +20,23 @@ namespace NanPoc.Web.Controllers
 
         public IActionResult Search()
         {
-            SearchModel model = new SearchModel();
+            DisplayModel model = new DisplayModel
+            {
+                Search = new SearchModel(),
+                Posts = new List<PostAdModel>()
+            };
+            
             return View(model);
         }
         [HttpPost]
-        public IActionResult Search(SearchModel model)
+        public IActionResult Search(DisplayModel model)
         {
-            return View();
+            model.Posts = mockdb.GetPosts(model.Search);
+            foreach(var post in model.Posts)
+            {
+                post.SetImageURL();
+            }
+            return View(model);
         }
 
         public IActionResult PostAd()
@@ -36,6 +47,8 @@ namespace NanPoc.Web.Controllers
         [HttpPost]
         public IActionResult PostAd(PostAdModel model)
         {
+            mockdb.SavePost(model);
+
             return View();
         }
 
